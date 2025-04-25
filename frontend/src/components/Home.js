@@ -4,11 +4,10 @@ import { useNavigate } from 'react-router-dom';
 
 const Button = ({ children, primary, onClick, ...props }) => (
   <button
-    className={`inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-md shadow-sm transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 ${
-      primary
+    className={`inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-md shadow-sm transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 ${primary
         ? 'text-white bg-blue-600 hover:bg-blue-700 focus:ring-blue-500'
         : 'text-gray-700 bg-white hover:bg-gray-50 focus:ring-blue-500'
-    }`}
+      }`}
     onClick={onClick}
     {...props}
   >
@@ -52,7 +51,7 @@ const Home = () => {
           <Button onClick={() => handleButtonClick('/signup')}>Sign Up</Button>
         </nav>
       </header>
-      
+
       <main className="flex-1">
         <Section bg="bg-blue-600" height="min-h-[30rem]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center h-full">
@@ -90,7 +89,7 @@ const Home = () => {
         <Section bg="bg-gray-100" height="min-h-[25rem]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="bg-gray-200 w-full h-64 min-h-[18rem] rounded-lg overflow-hidden flex justify-center items-center">
-              <img src="home-2.jpeg" alt="" className='w-full'/>
+              <img src="home-2.jpeg" alt="" className='w-full' />
             </div>
             <div>
               <h2 className="text-3xl font-bold mb-4 text-left">Modernize Your Hospital Operations</h2>
@@ -130,7 +129,7 @@ const Home = () => {
 
       <footer className="bg-black py-6 border-t">
         <div className="container mx-auto px-4 flex items-center justify-between">
-          <p className="text-gray-100">&copy; 2024 Medi-Track. All rights reserved.</p>
+          <p className="text-gray-100">&copy; 2025 All rights reserved.</p>
         </div>
       </footer>
     </div>
